@@ -1,10 +1,10 @@
 <section>
     <header>
-        <h2 class="text-lg font-medium text-gray-900">
+        <h2 class="text-lg font-medium text-black-900">
             {{ __('Update Password') }}
         </h2>
 
-        <p class="mt-1 text-sm text-gray-600">
+        <p class="mt-1 text-sm text-black-600">
             {{ __('Ensure your account is using a long, random password to stay secure.') }}
         </p>
     </header>
@@ -36,7 +36,6 @@
             name="password_confirmation"
             label="{{ __('Confirm Password') }}"
             type="text"
-            :value="old('nom', $user->nom)"
             required/>
             <x-breeze::input-error :messages="$errors->updatePassword->get('password_confirmation')" class="mt-2" />
         </div>
